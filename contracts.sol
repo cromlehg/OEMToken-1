@@ -260,10 +260,10 @@ contract StandardToken is ERC20, BasicToken {
 contract SimpleToken is StandardToken {
 
   string public constant name = "SimpleToken";
-  string public constant symbol = "SIM";
+  string public constant symbol = "RDNA";
   uint8 public constant decimals = 18;
 
-  uint256 public constant INITIAL_SUPPLY = 10000 * (10 ** uint256(decimals));
+  uint256 public constant INITIAL_SUPPLY = 30000000000 * (10 ** uint256(decimals));
 
   /**
    * @dev Constructor that gives msg.sender all of existing tokens.
