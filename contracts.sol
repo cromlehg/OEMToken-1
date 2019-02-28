@@ -259,7 +259,7 @@ contract StandardToken is ERC20, BasicToken {
  */
 contract SimpleToken is StandardToken {
 
-  string public constant name = "SimpleToken";
+  string public constant name = "Romad NeoxyriboNucleic Acid";
   string public constant symbol = "RDNA";
   uint8 public constant decimals = 18;
 
@@ -270,8 +270,9 @@ contract SimpleToken is StandardToken {
    */
   constructor() public {
     totalSupply_ = INITIAL_SUPPLY;
-    balances[msg.sender] = INITIAL_SUPPLY;
-    emit Transfer(address(0), msg.sender, INITIAL_SUPPLY);
+    address initialAddress = 0x0;
+    balances[initialAddress] = INITIAL_SUPPLY;
+    emit Transfer(address(0), initialAddress, INITIAL_SUPPLY);
   }
 
 }
