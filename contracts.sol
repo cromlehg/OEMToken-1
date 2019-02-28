@@ -259,7 +259,7 @@ contract StandardToken is ERC20, BasicToken {
  */
 contract SimpleToken is StandardToken {
 
-  string public constant name = "Romad DeoxyriboNucleic Acid";
+  string public constant name = "ROMAD DNA";
   string public constant symbol = "RDNA";
   uint8 public constant decimals = 18;
 
